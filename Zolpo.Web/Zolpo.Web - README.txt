@@ -1,0 +1,12 @@
+This is the controller that handles with the http's requests.
+We have applied 2 types of requests as follows:
+Get Request: Gets a request from the client, uses the api or the cache table.
+If there is an error- it return the specific error to the client,
+Otherwise- returns the response to the client.
+
+Post Request: 
+Gets the product image in base64 string format and the product barcode,
+and saves the image as the barcode received. 
+The image is stored with the rest of the images accessible to the user.
+
+this controller uses the DBOperations dll
